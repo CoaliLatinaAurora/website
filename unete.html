@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-header"></div>
+         <nav class="navbar">
+            <div class="nav-container">
+                <ul class="navlinks">
+                    <li> <a href="inicio.html">Inicio</a></li>
+                    <li class="values-dropdown">
+                        <a href="nosotros.html">Sobre Nosotros</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="mision-vision.html">Mision & Vision</a>
+                                </li>
+                                <li>
+                                    <a href="mesa.html">Mesa Directiva </a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="values-dropdown">
+                        <a href="programas.html">Programas</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="promocion.html">Promocion de Salud</a>
+                                </li>
+                                <li>
+                                    <a href="investigacion.html">Investigaciones</a>
+                                </li>
+                                <li>
+                                    <a href="educacion.html">Educacion</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li><a href="servicios.html">Nuestros Servicios</a></li>
+                    <li><a href="unete.html">Unete</a></li>
+                    <a href="get-involved.html" class="language-btn">EN</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- INTRODUCCIÓN PARTICIPA -->
+<section class="Contact-intro">
+    <h1>Participa</h1>
+
+
+</section>
+
+
+<!-- FORMULARIO DE CONTACTO -->
+<section class="Contact-container">
+
+    <h2>Conéctate con Nosotros</h2>
+
+    <p>
+        ¿Te interesa colaborar, ser voluntario,
+        participar en uno de nuestros programas o
+        conocer más sobre nuestro trabajo? Envíanos
+        un mensaje utilizando el siguiente formulario.
+    </p>
+
+
+    <form class="Contact-form"
+          action="https://formspree.io/f/xbggdvjr"
+          method="POST">
+
+
+        <!-- NOMBRE COMPLETO -->
+        <label for="name">Nombre Completo</label>
+
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Ingresa tu nombre completo"
+               autocomplete="name"
+               required>
+
+
+        <!-- CORREO ELECTRÓNICO -->
+        <label for="email">Correo Electrónico</label>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Ingresa tu correo electrónico"
+               autocomplete="email"
+               required>
+
+
+        <!-- MOTIVO DE CONTACTO -->
+        <label for="reason">
+            Motivo de Contacto
+        </label>
+
+        <select id="reason"
+                name="reason"
+                required>
+
+            <option value="" disabled selected>
+                Selecciona un motivo
+            </option>
+
+            <option value="partnership">
+                Alianza / Colaboración
+            </option>
+
+            <option value="volunteer">
+                Voluntariado
+            </option>
+
+            <option value="program">
+                Participación en un Programa
+            </option>
+
+            <option value="services">
+                Consultoría / Servicios
+            </option>
+
+            <option value="general">
+                Consulta General
+            </option>
+
+        </select>
+
+
+        <!-- MENSAJE -->
+        <label for="message">Mensaje</label>
+
+        <textarea id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                  required></textarea>
+
+
+        <!-- ENVIAR -->
+        <button type="submit">
+            Enviar Mensaje
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+</body>
+</html>
+</body>
+</html>

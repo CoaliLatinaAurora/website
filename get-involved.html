@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-header-en"></div>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="values-dropdown">
+                        <a href="about-us.html">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="mission-vission.html">Mission & Vision</a>
+                                </li>
+                                <li>
+                                    <a href="board.html">Board of Directors</a>
+                                </li>
+                            </ul>
+                    </li>
+                     <li class="values-dropdown">
+                        <a href="our-programs.html">Our Programs</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="healthpromotion.html">Health Promotion</a>
+                                </li>
+                                <li>
+                                    <a href="research.html">Research</a>
+                                </li>
+                                <li>
+                                    <a href="education.html">Education</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li><a href="our-services.html">Our Services</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <a href="unete.html" class="language-btn">ES</a>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <main>
+
+    <!-- GET INVOLVED INTRO -->
+    <section class="Contact-intro">
+        <h1>Get Involved</h1>
+        
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="Contact-container">
+
+        <h2>Connect With Us</h2>
+
+        <p>
+            Interested in partnering, volunteering,
+            participating in a program, or learning
+            more about our work? Send us a message
+            using the form below.
+        </p>
+
+        <form class="Contact-form"
+              action="https://formspree.io/f/xbggdvjr"
+              method="POST">
+
+            <!-- FULL NAME -->
+            <label for="name">Full Name</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your full name"
+                   autocomplete="name"
+                   required>
+
+
+            <!-- EMAIL -->
+            <label for="email">Email Address</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email address"
+                   autocomplete="email"
+                   required>
+
+
+            <!-- REASON -->
+            <label for="reason">
+                Reason for Contacting Us
+            </label>
+
+            <select id="reason"
+                    name="reason"
+                    required>
+
+                <option value="" disabled selected>
+                    Select a reason
+                </option>
+
+                <option value="partnership">
+                    Partnership / Collaboration
+                </option>
+
+                <option value="volunteer">
+                    Volunteering
+                </option>
+
+                <option value="program">
+                    Program Participation
+                </option>
+
+                <option value="services">
+                    Consulting / Services
+                </option>
+
+                <option value="general">
+                    General Inquiry
+                </option>
+
+            </select>
+
+
+            <!-- MESSAGE -->
+            <label for="message">Message</label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="6"
+                      placeholder="Tell us how we can help..."
+                      required></textarea>
+
+
+            <!-- SUBMIT -->
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>   
+</body>
+</html>
