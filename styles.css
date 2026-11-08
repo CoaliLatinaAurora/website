@@ -1827,3 +1827,218 @@ LANGUAGE BUTTON
 .language-switch a:hover {
     text-decoration: underline;
 }
+/* ==================================
+   MOBILE NAVIGATION
+================================== */
+
+/* Hidden on desktop */
+.menu-toggle,
+.submenu-toggle {
+    display: none;
+}
+
+/* TABLETS AND PHONES */
+@media (max-width: 768px) {
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Hamburger button */
+    .menu-toggle {
+        display: block;
+        align-self: flex-end;
+        background: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 12px 20px;
+        color: inherit;
+    }
+
+    /* Navigation hidden until opened */
+    .navbar .navlinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+        list-style: none;
+        position: static;
+        height: auto;
+    }
+
+    /* Open navigation */
+    .navbar .navlinks.active {
+        display: flex;
+    }
+
+    .navbar .navlinks > li {
+        width: 100%;
+        position: relative;
+        text-align: left;
+    }
+
+    .navbar .navlinks > li > a {
+        display: inline-block;
+        padding: 14px 10px;
+    }
+
+    /* Dropdown arrow */
+    .submenu-toggle {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px;
+        color: inherit;
+    }
+
+    /* Hide desktop dropdown behavior */
+    .navbar .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0 0 0 15px;
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Show submenu when opened */
+    .navbar .values-dropdown.submenu-open > .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown-menu li {
+        width: 100%;
+    }
+
+    .navbar .dropdown-menu a {
+        display: block;
+        padding: 12px;
+    }
+
+}
+/* ==================================
+   RESPONSIVE OUR STORY
+================================== */
+
+@media (max-width: 768px) {
+
+    .our-story-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .our-story-image {
+        width: 100%;
+    }
+
+    .our-story-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .our-story-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .our-story-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .our-story-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+}
+/* ==================================
+   RESPONSIVE FOUNDERS
+================================== */
+
+@media (max-width: 768px) {
+
+    .founders-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .founders-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .founder-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .founder-card img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto 20px;
+        border-radius: 12px;
+    }
+
+    .founder-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .founder-card p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+}
+/* ==================================
+   RESPONSIVE CLOSING SECTION
+================================== */
+
+@media (max-width: 768px) {
+
+    .our-story-closing {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .our-story-closing h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .our-story-closing p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .our-story-button {
+        display: inline-block;
+        max-width: 100%;
+        padding: 14px 25px;
+        margin-top: 20px;
+    }
+
+}
