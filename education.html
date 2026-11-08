@@ -9,41 +9,116 @@
 <body>
     <header>
         <div class="logo-header-en"></div>
-        <nav class="navbar">
-            <div class="nav-container">
-                <ul class="navlinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="values-dropdown">
-                        <a href="about-us.html">About Us</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="mission-vission.html">Mission & Vision</a>
-                                </li>
-                                <li>
-                                    <a href="board.html">Board of Directors</a>
-                                </li>
-                            </ul>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- MOBILE HAMBURGER BUTTON -->
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <!-- NAVIGATION LINKS -->
+        <ul class="navlinks" id="primary-navigation">
+
+            <!-- HOME -->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <!-- ABOUT US DROPDOWN -->
+            <li class="values-dropdown">
+
+                <a href="about-us.html">About Us</a>
+
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-label="Toggle About Us submenu"
+                        aria-expanded="false">
+                    ▾
+                </button>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="mission-vission.html">
+                            Mission & Vision
+                        </a>
                     </li>
-                     <li class="values-dropdown">
-                        <a href="our-programs.html">Our Programs</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="healthpromotion.html">Health Promotion</a>
-                                </li>
-                                <li>
-                                    <a href="research.html">Research</a>
-                                </li>
-                                <li>
-                                    <a href="education.html">Education</a>
-                                </li>
-                            </ul>
+
+                    <li>
+                        <a href="board.html">
+                            Board of Directors
+                        </a>
                     </li>
-                    <li><a href="our-services.html">Our Services</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                    <a href="educacion.html" class="language-btn">ES</a>
+
                 </ul>
-            </div>
-        </nav>
+            </li>
+
+            <!-- OUR PROGRAMS DROPDOWN -->
+            <li class="values-dropdown">
+
+                <a href="our-programs.html">Our Programs</a>
+
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-label="Toggle Our Programs submenu"
+                        aria-expanded="false">
+                    ▾
+                </button>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="healthpromotion.html">
+                            Health Promotion
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="research.html">
+                            Research
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="education.html">
+                            Education
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <!-- OUR SERVICES -->
+            <li>
+                <a href="our-services.html">
+                    Our Services
+                </a>
+            </li>
+
+            <!-- GET INVOLVED -->
+            <li>
+                <a href="get-involved.html">
+                    Get Involved
+                </a>
+            </li>
+
+            <!-- LANGUAGE SWITCH -->
+            <li>
+                <a href="mesa.html" class="language-btn">
+                    ES
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
     </header>    
   <main>
 
@@ -233,5 +308,6 @@
     </section>
 
 </main>  
+<script src="script.js"></script>
 </body>
 </html>

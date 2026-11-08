@@ -9,41 +9,116 @@
 <body>
     <header>
         <div class="logo-header"></div>
-      <nav class="navbar">
-            <div class="nav-container">
-                <ul class="navlinks">
-                    <li> <a href="inicio.html">Inicio</a></li>
-                    <li class="values-dropdown">
-                        <a href="nosotros.html">Sobre Nosotros</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="mision-vision.html">Mision & Vision</a>
-                                </li>
-                                <li>
-                                    <a href="mesa.html">Mesa Directiva </a>
-                                </li>
-                            </ul>
+<!-- BARRA DE NAVEGACIÓN -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- BOTÓN DE MENÚ MÓVIL -->
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <!-- ENLACES DE NAVEGACIÓN -->
+        <ul class="navlinks" id="primary-navigation">
+
+            <!-- INICIO -->
+            <li>
+                <a href="inicio.html">Inicio</a>
+            </li>
+
+            <!-- SOBRE NOSOTROS -->
+            <li class="values-dropdown">
+
+                <a href="nosotros.html">Sobre Nosotros</a>
+
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-label="Desplegar menú Sobre Nosotros"
+                        aria-expanded="false">
+                    ▾
+                </button>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="mision-vision.html">
+                            Misión & Visión
+                        </a>
                     </li>
-                    <li class="values-dropdown">
-                        <a href="programas.html">Programas</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="promocion.html">Promocion de Salud</a>
-                                </li>
-                                <li>
-                                    <a href="investigacion.html">Investigaciones</a>
-                                </li>
-                                <li>
-                                    <a href="educacion.html">Educacion</a>
-                                </li>
-                            </ul>
+
+                    <li>
+                        <a href="mesa.html">
+                            Mesa Directiva
+                        </a>
                     </li>
-                    <li><a href="servicios.html">Nuestros Servicios</a></li>
-                    <li><a href="unete.html">Unete</a></li>
-                    <a href="about-us.html" class="language-btn">EN</a>
+
                 </ul>
-            </div>
-        </nav>
+            </li>
+
+            <!-- PROGRAMAS -->
+            <li class="values-dropdown">
+
+                <a href="programas.html">Programas</a>
+
+                <button class="submenu-toggle"
+                        type="button"
+                        aria-label="Desplegar menú Programas"
+                        aria-expanded="false">
+                    ▾
+                </button>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="promocion.html">
+                            Promoción de Salud
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="investigacion.html">
+                            Investigaciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="educacion.html">
+                            Educación
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <!-- NUESTROS SERVICIOS -->
+            <li>
+                <a href="servicios.html">
+                    Nuestros Servicios
+                </a>
+            </li>
+
+            <!-- ÚNETE -->
+            <li>
+                <a href="unete.html">
+                    Únete
+                </a>
+            </li>
+
+            <!-- CAMBIAR A INGLÉS -->
+            <li>
+                <a href="education.html" class="language-btn">
+                    EN
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
     </header>  
     <!--TÍTULO NUESTRA HISTORIA-->
 <section class="our-story-intro">
@@ -200,5 +275,6 @@
     </div>
 
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
