@@ -2124,3 +2124,178 @@ LANGUAGE BUTTON
     }
 
 }
+/* MOBILE RESPONSIVE - MISSION & VISION */
+
+@media screen and (max-width: 768px) {
+
+    .mission-container,
+    .vision-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .mission-text,
+    .vision-text {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .mission-text h2,
+    .vision-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .mission-text p,
+    .vision-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .mission-image,
+    .vision-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mission-image img,
+    .vision-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    /* GUIDING PRINCIPLES */
+
+    .principles-container {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+.vision-text {
+    order: 1;
+}
+
+.vision-image {
+    order: 2;
+}
+/* ==================================
+   MOBILE - RESEARCH PAGE
+   ================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* RESEARCH SECTION */
+    .research-container,
+    .research-section {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* MAIN RESEARCH HEADING */
+    .research-container h1,
+    .research-section h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin: 0 0 20px;
+        text-align: left;
+    }
+
+    /* RESEARCH SUBHEADINGS */
+    .research-container h2,
+    .research-section h2 {
+        font-size: 23px;
+        line-height: 1.3;
+        margin: 20px 0 15px;
+        text-align: left;
+    }
+
+    /* RESEARCH PARAGRAPHS */
+    .research-container p,
+    .research-section p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    /* RESEARCH IMAGES */
+    .research-container img,
+    .research-section img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+/* MOBILE FIX - MISSION AND VISION */
+
+@media screen and (max-width: 768px) {
+
+    .mission-container,
+    .vision-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 30px 20px;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .mission-text,
+    .vision-text,
+    .mission-image,
+    .vision-image {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        flex: none;
+        position: static;
+    }
+
+    .mission-text,
+    .vision-text {
+        order: 1;
+    }
+
+    .mission-image,
+    .vision-image {
+        order: 2;
+    }
+
+    .mission-text h2,
+    .vision-text h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .mission-text p,
+    .vision-text p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .mission-image img,
+    .vision-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
